@@ -33,7 +33,7 @@ extern Menu createItemMenu;
 extern Menu editingFeedMenu;
 extern Menu editingFeedDataMenu;
 extern Menu editingItemsMenu;
-extern void setupScreen(bool drawsTitle = false);
+void setupScreen(bool drawsTitle = true);
 extern void borderScreen();
 extern void GoToEditSingleItem(Menu* _cm);
 
@@ -191,6 +191,7 @@ void GoToCreateItem(Menu* _cm) {
 
     if(strcmp(itemName, "\\cancel") == 0) {
         ReturnToPreviousMenu(nullptr);
+        mainChannel->DeleteChild(item);
         return;
     }
 
@@ -207,6 +208,7 @@ void GoToCreateItem(Menu* _cm) {
 
     if(strcmp(itemLink, "\\cancel") == 0) {
         ReturnToPreviousMenu(nullptr);
+        mainChannel->DeleteChild(item);
         return;
     }
 
@@ -224,6 +226,7 @@ void GoToCreateItem(Menu* _cm) {
 
     if(strcmp(itemDesc, "\\cancel") == 0) {
         ReturnToPreviousMenu(nullptr);
+        mainChannel->DeleteChild(item);
         return;
     }
 
