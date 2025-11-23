@@ -1,6 +1,6 @@
 # RssMaker
 
-This is a small program intended for use on servers to create and manage simple RSS feeds that others may read from. I created it for use on [my personal server](https://alex-selter.com/). It is most entirely complete, I only need to finish one top-level menu option (that is not strictly required anyway).
+This is a small program intended for use on servers to create and manage simple RSS feeds that others may read from. I created it for use on [my personal server](https://alex-seltzer.com/). It is most entirely complete, I only need to finish one top-level menu option (that is not strictly required anyway).
 
 ## Compilation
 
